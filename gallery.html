@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="logoo.png">
+    <title>HOCET | Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="fonts-6/css/all.css">
+     <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script
+  src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+  crossorigin="anonymous"></script>
+
+  <style>
+     section .gallery div{
+        text-align: center;
+     }
+     section .gallery h1{
+        font-family: 'Bebas Neue';
+        text-align: center;
+     }
+    section .gallery h2{
+        font-family: 'Bebas Neue';
+        text-align: center;
+    }
+    section .gallery p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    section .gallery a{
+        font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+    <div class="fluid-top">
+        <div class="container-sm">
+            <div class="row">
+                <div class="cont-top col-12 d-flex">
+                    <h5 class="d-none d-sm-block"><i class="fa-solid fa-envelope"></i> hocet2002@gmail.com</h5>
+                    <h5 class="d-none d-lg-block"><i class="fa-solid fa-phone"></i>+255 784 396 560</h5>
+                    <h5 id="question" data-bs-toggle="modal" data-bs-target="#questionModal">I HAVE A QUESTION?</h5>
+                </div>
+            </div>
+        </div>
+</div>
+
+   
+        <div class="fluid">
+            <div class="fluid-header">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-12 navigation d-flex">
+                            <a href=""><img src="hocet logo.png" width="150" height="50" alt="hocet logo" class="pt-1"></a>
+                            <nav>
+                                <ul class="d-flex d-none d-xl-flex dropdown">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropbtn" data-bs-target="#dropdown-menu"><a>About Us</a>
+                                        <ul class="about-sub" id="dropdown-menu">
+                                            <a href="about us.html"><li class="pt-2 dropdown-item">About Hocet</li></a>
+                                            <hr>
+                                            <a href="our story.html"><li class="pb-1 dropdown-item">Our Success Stories</li></a>
+                                        </ul>
+                                    </li>
+                                    <li class="links"><a href="#project">Project</a></li>
+                                    <li class="links"><a href="">Shop</a></li>
+                                    <li class="links"><a href="">Sponsorship</a></li>
+                                    <li class="links"><a href="gallery.html">Gallery</a></li>
+                                    <li class="links"><a href="donation.html">Donation</a></li>
+                                    <li class="links"><a href="contact.html" >Contact</a></li>
+                                    
+                                </ul>
+                                <i class="fa-sharp fa-solid fa-bars d-xl-none" id="menu" onclick="openNav()"></i>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="questionModal">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+
+                    <!-- modal header  -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Welcome to Ask Question</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- modal body  -->
+                    <div class="modal-body">
+                        <p>if you have any Question Please ask Us through the following phone number:
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i> +255 784 396 560</li>
+                                <li><i class="fa-solid fa-phone"></i> +255 673 292 994</li>
+                            </ul>
+                        </p>
+
+                        <p>Via Email
+                            <ul>
+                                <li><i class="fa-solid fa-envelope"></i> hocet2002@gmail.com</li>
+                                <li><i class="fa-solid fa-envelope"></i> hezekia.mwalugaja@gmail.com</li>
+                            </ul>
+                        </p>
+
+                    </div>
+
+                    <!-- modal footer  -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+
+        <!-- now design slide nav  -->
+        <section>
+            <div class="slidenav-overlay">
+               <!-- <div class="row"> -->
+                <div class="slide-nav" id="slide">
+                    <button type="button" class="btn-close pt-5 xmark" aria-label="Close" onclick="removeNav()"></button>
+                    <ul class="pt-5">
+                        <li><a href="#home">Home</a></li>
+                        <li class="dropbtn" data-bs-target="#dropdown-menu"><a>About Us</a>
+                            <ul class="about-sub" id="dropdown-menu">
+                                <a href="about us.html"><li class="pt-2 dropdown-item">About Hocet</li></a>
+                                <hr>
+                                <a href="our story.html"><li class="pb-1 dropdown-item">Our Success Stories</li></a>
+                            </ul>
+                        </li>
+                        <li class="links"><a href="#project">Project</a></li>
+                        <li class="links"><a href="">Shop</a></li>
+                        <li class="links"><a href="">Sponsorship</a></li>
+                        <li class="links"><a href="gallery.html">Gallery</a></li>
+                        <li class="links"><a href="donation.html">Donation</a></li>
+                        <li class="links"><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+               <!-- </div> -->
+            </div>
+        </section>
+
+        <script>
+        
+            function openNav(){
+                document.getElementById("slide").style.width = "250px";
+            }
+
+            function removeNav(){
+                document.getElementById("slide").style.width = "0px";
+            }
+        </script>
+
+
+
+        <section>
+            <div class="gallery">
+                <div class="container">
+                    <h1 class="pt-4">HOCET GALLERY</h1>
+                    <div class="row">
+                            <div class="co-12 col-md-4 col-lg-4 graduation">
+                               <div class="card">
+                                <img src="pictures/22e0cec09996075722e0cec099960757HSS-Graduation-3-960x320.jpg">
+                                <div class="card-body g-body">
+                                    <h2 class="card-title">EVENT: HOCET GRADUATION</h2>
+                                    <P class="card-text">All image about HOCET Sececondary School Graduation ara available here click view to view Images.</P>
+                                    <a href="" class="btn btn-warning">View</a>
+                                </div>
+                               </div>
+                            </div>
+
+
+                            <div class="co-12 col-md-4 col-lg-4 years">
+                                <div class="card">
+                                    <img src="pictures/22e0cec09996075722e0cec099960757HSS-Graduation-3-960x320.jpg">
+                                 <div class="card-body">
+                                     <h2 class="card-title">EVENT: HOCET 20 YEARS CELEBRATION</h2>
+                                     <P class="card-text">All image about HOCET Sececondary School Graduation ara available here click view to view Images.</P>
+                                     <a href="" class="btn btn-warning">View</a>
+                                 </div>
+                                </div>
+                             </div>
+
+
+                             <div class="co-12 col-md-4 col-lg-4 ukwata">
+                                <div class="card">
+                                    <img src="pictures/22e0cec09996075722e0cec099960757HSS-Graduation-3-960x320.jpg">
+                                 <div class="card-body">
+                                     <h2 class="card-title">EVENT: UKWATA GRADUATION</h2>
+                                     <P class="card-text">All image about HOCET Sececondary School Graduation ara available here click view to view Images.</P>
+                                     <a href="" class="btn btn-warning">View</a>
+                                 </div>
+                                </div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+<script type="text/javascript">
+    const li=document.querySelectorAll(".link");
+    const sec=document.querySelectorAll("section");
+
+    function activeMenu(){
+        let len=sec.length;
+
+        while(--len && window.scrollY + 97 < sec[len].offsetTop){}
+            li.forEach(ltx => ltx.classList.remove("active"));
+            li[len].classList.add("active");
+    }
+
+    activeMenu();
+    window.addEventListener("scroll", activeMenu);
+</script>
+<script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

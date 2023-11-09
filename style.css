@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Neuton', 'Bebas Neue', sans-serif, serif;
+}
+span{
+    color: darkorange;
+    font-family: 'Bebas Neue';
+
+}
+.fluid-top .container-sm .cont-top{
+    justify-content: space-between;
+}
+.fluid-top .container-sm .cont-top h5{
+    font-size: 19px;
+    
+    padding: 10px 0px;
+}
+.fluid-top .container-sm .cont-top i{
+    margin-right: 10px;
+}
+.fluid-top .container-sm .cont-top #question{
+    padding: 15px 16px;
+    background: darkorange;
+}
+.fluid-top .container-sm .cont-top #question:hover{
+    cursor: pointer;
+    background: orange;
+}
+
+/* now desiging slide navigation  */
+
+section .slide-nav{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 0;
+    background-color: skyblue;
+    overflow-x: hidden;
+    transition: .4s;
+}
+section .slide-nav ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section .slide-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+section .slide-nav .xmark{
+    float: right;
+    margin-right: 20px;
+}
+section .slide-nav ul li a:hover{
+    color: darkorange;
+    cursor: pointer;
+}
+section  .slide-nav ul li .about-sub{
+    display: none;
+    background-color:  rgb(48, 151, 182);
+}
+section .slide-nav ul li .about-sub a:hover{
+    color: whitesmoke;
+}
+section .slide-nav ul li:hover .about-sub{
+    display: block;
+}
+
+/* design modal  */
+.modal .modal-dialog p{
+    font-size: 20px;
+}
+.modal .modal-dialog ul li{
+    font-size: 20px;
+    list-style: none;
+}
+.modal .modal-dialog ul li i{
+    margin-right: 10px;
+}
+
+
+
+/*now time for designing navigation header*/
+.fluid .fluid-header .container-md .navigation{
+    justify-content: space-between;
+}
+.fluid .fluid-header{
+    background: skyblue;
+}
+.fluid .fluid-header .container-md .navigation nav{
+    padding: 10px 0px;
+}
+.fluid .fluid-header .container-md .navigation nav i{
+    font-size: 30px;
+    padding: 0px 30px;
+    cursor: pointer;
+}
+.fluid .fluid-header .container-md .navigation nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 22px;
+}
+.fluid .fluid-header .container-md .navigation nav ul li a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+.fluid .fluid-header .container-md .navigation nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 8.5vh;
+    left: 0;
+    bottom: -31px;
+    background: transparent;
+    border-bottom: 5px solid darkorange;
+    transform: scale(0);
+}
+.fluid .fluid-header .container-md .navigation nav ul li a:hover::after{
+    transform: scale(1.0);
+    transition: transform .4s;
+}
+.fluid .fluid-header .container-md .navigation nav ul li a:hover{
+    color: darkorange;
+    cursor: pointer;
+}
+.fluid .fluid-header .container-md .navigation nav ul li .about-sub{
+    display: none;
+    background-color: rgb(48, 151, 182);
+    position: absolute;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.fluid .fluid-header .container-md .navigation nav ul li .about-sub a:hover{
+    color: black;
+}
+.fluid .fluid-header .container-md .navigation nav ul li .about-sub a::after{
+    display: none;
+}
+.fluid .fluid-header .container-md .navigation nav ul li .about-sub a li{
+    margin-left: -15px;
+    font-size: 20px;
+}
+.fluid .fluid-header .container-md .navigation nav ul li .about-sub a li:hover{
+    color: whitesmoke;
+    padding-left: 20px;
+    background-color: transparent;
+}
+.fluid .fluid-header .container-md .navigation nav ul li:hover .about-sub{
+    display: block;
+}
+
+
+/*now for designing home section */
+section .back-image{
+    height: 84vh;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url('pictures/EZRA STUDIOS 0656123395 PHOTO-107.jpg') center center/cover;
+}
+section .back-image .container-md{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+}
+section .back-image .container-md h3{
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Bebas Neue';
+}
+section .back-image .container-md p{
+    letter-spacing: 1px;
+    color: whitesmoke;
+    font-family: 'Neuton';
+    font-size: 22px;
+    text-align: justify;
+}
+
+
+/*now designig about section*/
+section .about{
+    background: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.685)), url('pictures/EZRASTUDIOS0656123395PHOTO-117.jpg') center center/cover;
+/*    height: 100vh;*/
+}
+section .about .container-sm{
+/*    height: 100vh;*/
+}
+section .about .container-sm h1{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    color: white;
+    position: relative;
+}
+section .about .container-sm h1::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 5px;
+    bottom: -11px;
+    border-radius: 10px;
+    background-color: darkorange;
+    left: 8%;
+    transform: translateX(-50%);
+}
+section .about .container-sm h3{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    color: white;
+}
+section .about .container-sm h2{
+}
+section .about .container-sm p{
+    font-family: 'Neuton';
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: grey;
+}
+section .about .container-sm .about-img{
+    padding: 0px !important;
+}
+
+/* designig our main focus area  */
+section .area-focus{
+    width: 100%;
+}
+section .area-focus .container h1{
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: whitesmoke;
+}
+section .area-focus .container h6 i{
+    font-size: 30px;
+    color: whitesmoke;
+}
+section .area-focus .container p{
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: justify;
+
+}
+
+
+/* project section  */
+/* .project{
+    background: linear-gradient(rgba(250, 250, 250, 0.685), rgba(255, 255, 255, 0.685)), url('pictures/EZRA STUDIOS 0656123395 PHOTO-117.jpg') center center/cover;
+} */
+.project .container h1{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    position: relative;
+}
+.project .container h1::after{
+    content: '';
+    position: absolute;
+    width: 7%;
+    height: 5px;
+    bottom: -16px;
+    border-radius: 10px;
+    background-color: darkorange;
+    left: 6.5%;
+    transform: translateX(-50%);
+}
+.project .container .agriculture .agri-img{
+    padding: 0px !important;
+}
+.project .container .agriculture .agri-list h3{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+.project .container .agriculture .agri-list ul li{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.project .container .building .build-img{
+    padding: 0px !important;
+}
+.project .container .building .build-list h3{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+.project .container .building .build-list ul li{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+section .contact .container h3{
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    position: relative;
+}
+section .contact .container h3::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 5px;
+    bottom: -11px;
+    border-radius: 10px;
+    background-color: darkorange;
+    left: 8%;
+    transform: translateX(-50%);
+}
+section .contact .container h4{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+section .contact .container p{
+    font-size: 20px;
+    text-align: justify;
+}
+section .contact .container ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section .contact .container ul li i{
+    margin-right: 5px;
+}
+
+
+
+section .word .container h3{
+    font-size: 40px;
+    font-family: 'Bebas Neue';
+    position: relative;
+}
+section .word .container h3::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 5px;
+    bottom: -11px;
+    border-radius: 10px;
+    background-color: darkorange;
+    left: 8%;
+    transform: translateX(-50%);
+}
+section .word .container p{
+    font-size: 20px;
+    text-align: justify;
+}
+section .word .container .founder-img{
+    padding: 0px !important;
+}
+
+
+
+
+footer .foot{
+    border-top: 4px solid grey;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.897), rgba(0, 0, 0, 0.897)), url('pictures/IMG_7383.jpg') center center/cover;
+}
+footer .foot .container .logo p{
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: justify;
+}
+footer .foot .container .links h6{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+}
+footer .foot .container .links ul li{
+    list-style: none;
+    font-size: 20px;
+}
+footer .foot .container .links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+footer .foot .container .links ul li a:hover{
+    cursor: pointer;
+    color: darkorange;
+    padding-left: 15px;
+    border-left: 5px solid darkorange;
+}
+
+footer .foot .container .social h6{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+}
+footer .foot .container .social ul li{
+    list-style: none;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+footer .foot .container .social ul li i{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+footer .foot .container .social ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+footer .foot .container .social ul li a:hover{
+    color: darkorange;
+}
+
+
+footer .foot .container .cont h6{
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    color: whitesmoke;
+}
+footer .foot .container .cont ul li{
+    list-style: none;
+    font-size: 20px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+footer .foot .container .cont ul li i{
+    font-size: 30px;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+footer .foot .container .cont ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+footer .foot .container .cont ul li a:hover{
+    color: darkorange;
+}
+
+footer .footer-buttom{
+    background-color: rgb(49, 48, 48);
+    width: 100%;
+    height: auto;
+    border-top: 4px solid gray;
+}
+footer .footer-buttom p{
+    color: whitesmoke;
+    font-size: 20px;
+}

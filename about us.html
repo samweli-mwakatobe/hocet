@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="logoo.png">
+    <title>HOCET | About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="fonts-6/css/all.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+
+    <style>
+        .about-us .container img{
+            padding: 0px !important;
+        }
+        .about-us .container h1{
+            font-family: 'Bebas Neue';
+            font-size: 40px;
+        }
+        .about-us .container p{
+            font-size: 20px;
+            letter-spacing: 1px;
+            text-align: justify;
+        }
+        .about-us .container h3{
+            font-size: 30px;
+            font-family: 'Bebas Neue';
+            position: relative;
+        }
+        .about-us .container h3::after{
+            content: '';
+            position: absolute;
+            width: 15%;
+            height: 4px;
+            bottom: -15px;
+            border-radius: 10px;
+            background-color: darkorange;
+            left: 8%;
+            transform: translateX(-50%);
+        }
+        .about-us .container.school-img{
+            padding: 0 !important;
+        }
+        
+        .about-us .container .mission-img{
+            padding: 0 !important;
+        }
+        .about-us .container .vision-img{
+            padding: 0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="fluid-top">
+        <div class="container-sm">
+            <div class="row">
+                <div class="cont-top col-12 d-flex">
+                    <h5 class="d-none d-sm-block"><i class="fa-solid fa-envelope"></i> hocet2002@gmail.com</h5>
+                    <h5 class="d-none d-lg-block"><i class="fa-solid fa-phone"></i>+255 784 396 560</h5>
+                    <h5 id="question" data-bs-toggle="modal" data-bs-target="#modal-question">I HAVE A QUESTION?</h5>
+                </div>
+            </div>
+        </div>
+</div>
+
+   
+        <div class="fluid">
+            <div class="fluid-header">
+                <div class="container-md">
+                    <div class="row">
+                        <div class="col-12 navigation d-flex">
+                            <a href=""><img src="hocet logo.png" width="150" height="50" alt="hocet logo" class="pt-1"></a>
+                            <nav>
+                                <ul class="d-flex d-none d-xl-flex dropdown">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class="dropbtn" data-bs-target="#dropdown-menu"><a>About Us</a>
+                                        <ul class="about-sub" id="dropdown-menu">
+                                            <a href="about us.html"><li class="pt-2 dropdown-item">About Hocet</li></a>
+                                            <hr>
+                                            <a href="our story.html"><li class="pb-1 dropdown-item">Our Success Stories</li></a>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Project</a></li>
+                                    <li><a href="">Shop</a></li>
+                                    <li><a href="">Sponsorship</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="donation.html">Donation</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    
+                                </ul>
+                                <i class="fa-sharp fa-solid fa-bars d-xl-none" id="menu" onclick="openNav()"></i>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-question">
+            <div class="modal-dialog modal-lg">
+               <div class="modal-content">
+
+                    <!-- modal header  -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Welcome to Ask Question</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <!-- modal body  -->
+                    <div class="modal-body">
+                        <p>if you have any Question Please ask Us through the following phone number:
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i> +255 784 396 560</li>
+                                <li><i class="fa-solid fa-phone"></i> +255 673 292 994</li>
+                            </ul>
+                        </p>
+
+                        <p>Via Email
+                            <ul>
+                                <li><i class="fa-solid fa-envelope"></i> hocet2002@gmail.com</li>
+                                <li><i class="fa-solid fa-envelope"></i> hezekia.mwalugaja@gmail.com</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <!-- modal footer  -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+
+
+          <!-- now design slide nav  -->
+          <section>
+            <div class="slidenav-overlay">
+               <!-- <div class="row"> -->
+                <div class="slide-nav" id="slide">
+                    <button type="button" class="btn-close pt-5 xmark" aria-label="Close" onclick="removeNav()"></button>
+                    <ul class="pt-5">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropbtn" data-bs-target="#dropdown-menu"><a>About Us</a>
+                            <ul class="about-sub" id="dropdown-menu">
+                                <a href="about us.html"><li class="pt-2 dropdown-item">About Hocet</li></a>
+                                <hr>
+                                <a href="our story.html"><li class="pb-1 dropdown-item">Our Success Stories</li></a>
+                            </ul>
+                        </li>
+                        <li class="links"><a href="#project">Project</a></li>
+                        <li class="links"><a href="">Shop</a></li>
+                        <li class="links"><a href="">Sponsorship</a></li>
+                        <li class="links"><a href="">Gallery</a></li>
+                        <li class="links"><a href="">Donation</a></li>
+                        <li class="links"><a href="contact.html">Contact</a></li>
+                        
+                    </ul>
+                </div>
+               <!-- </div> -->
+            </div>
+        </section>
+
+
+        <script>
+            function openNav(){
+                document.getElementById("slide").style.width = "250px";
+            }
+
+            function removeNav(){
+                document.getElementById("slide").style.width = "0px";
+            }
+        </script>
+
+
+        <section>
+            <div class="about-us">
+                <div class="container">
+                    <h1 class="pt-5">ABOUT HANANASIF ORPHANAGE CENTER - <span>HOCET</span></h1>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Hananasif Orpahanage Center in Tanzania (Hocet) is a non profit organization on the mission to empower vulnerable youth and children in Tanzania.
+
+                                To maximaze its impact, Hananasi orphanage center
+                                has built its first boarding secondary school in Mkuranga region. Hananasif Orphanage School is a boarding secondary school in Mkuranga region of Tanzania.
+                            </p>
+        
+                            <p>HOCET is the registered organization serving orphaned and vulnerable children in Tanzania. It started its operation in 2002 by providing daily care to the kids around Kinondoni ward in Dar es Salaam. By then it was serving tenth of vulnerable kids. Currently hundreds of children have been served by this organization in terms of moral and material support. 
+                                The organisation has two centers namely <b>HOCET CITY CENTRE</b> which is now serving as dropping center whereas  kids are staying transitionally while waiting to join <b>HOCET SECONDARY SCHOOL</b> which is  under Hananasif Orphanage Centre; located at Mkuranga district  in Coast Region. 
+                            </p>        
+                        </div>
+
+                        <div class="col-12 school-img">
+                            <img class="img-fluid" src="pictures/hocet-mkuranga.jpg">
+                        </div>
+
+                        <div class="col-12">
+                            <P class="pt-3"> The school is pioneering the right to quality education, and skills development for out of school vulnerable youth of Tanzania. The boarding school registers 50 beneficiaries every year for the intevation of four years. 
+
+                                Each year, our school takes 70% female beneficiaries. Due to the number of female students. Our school accomodation facilities are not enough.
+                                
+                                Hense the management of Hocet seek to mobile resources for the female domitory construction. The domitory expected to accomodate 80 female student beneficiries.
+                            </P>
+    
+                            <p>
+                                Under the guidance of <b>Hezekia Mwalugaja</b> who is the <b>CEO</b> and the founder, the organization is currently serving around 170 kids (including secondary school & higher education)  whereby at least quarter of them are phasing out every year while quarter of them are getting enrolled yearly. 
+                            </p>          
+                        </div>
+
+                        <hr class="d-block d-lg-none">
+
+                        <div class="col-lg-6 col-12">
+                            <h3 class="pt-3"><b>VISION</b></h3>
+                            <P class="pt-3"><span>>></span> A Tanzania in which orphaned and vulnerable kids are integrated into a
+                                healthy, caring, and dynamic community and given tools they
+                                need to establish themselves as agents of change in their own
+                                communities including school by putting life in their days, not the days in
+                                their lives.
+                                </P>
+                        </div>
+
+                        <div class="col-lg-6 col-12 vision-img">
+                            <img class="img-fluid" src="pictures/EZRASTUDIOS0656123395PHOTO-116.jpg">
+                        </div>
+
+
+                        <div class="col-lg-6 col-12">
+                            <h3 class="pt-3"><b>MISSION</b></h3>
+                            <p class="pt-3"><span>>></span> To give kids in Tanzania an opportunity to create, learn and develop
+                                talents within a caring and nurturing environment.
+                                </p>
+                        </div>
+                        <div class="col-lg-6 col-12 mission-img pt-5">
+                            <img class="img-fluid" src="MIRADI UZALISHAJI/DSC_0169.JPG">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="foot">
+                <div class="container d-lg-flex d-sm-block">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 logo text-center">
+                            <a href=""><img src="hocet logo.png" width="200" height="50" alt="hocet logo" class="mt-3"></a>
+                             <p class="pt-3">We are non Government and non-profit organization registered as an NGO under the United Republic of Tanzania by laws.
+                                 Our mission is to equip vulnerable youth with...about</p>
+                        </div>
+        
+                        <div class="col-12 col-lg-3 links pt-3 text-center">
+                            <h6>Useful Links</h6>
+                            <ul>
+                               <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="">Project</a></li>
+                                <li><a href="">News Letter</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Sponsorship</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="donation.html">Donation</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-12 col-lg-3 social pt-3 text-center">
+                            <h6>Social Media</h6>
+                            <ul>
+                                <li><i class="fa-brands fa-facebook"></i><a href="https://web.facebook.com/people/HOCET/100070105412229/?hc_ref=ARSv-Ok-5utWUou_iDJFwLiNfD7cIebGGSdMXUH3w-aWokEIFcGY60nAVXUdyGxKte8&fref=nf&__xts__[0]=68.ARAliHzGltbOn1VIvi84H7fD-kfK0Mx9jvBa3r7igjZJhbdD1k2YqISmGOw2WXo7AUBF1srk2jTXheRuDPJwvTyniq8TEAGQbEXFCocqLHXXIYGSd-tbHnJlQOVxIewxfDIp017e9_c-Wr6pcjdc0vE3iw2epG6eOreEthqNVLPT5PU_VV90Z6X9TIAmxXJE9TP8SigVyNVkHyQEvj1uioInM5dIRJK3khvg8NEOulxAYsDgKBilp7MDPq4N_V9YOGb3iHqRNUOypcJwCIGXh5botFEiAMvlNv8kWc_RqQdaRxov3C0">HOCET</a></li>
+                                <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/hocet_tanzania/?next=%2F#">hocet_tanzania</a></li>
+                                <li><i class="fa-brands fa-whatsapp"></i>+255 784 396 560</li>
+                                <li><i class="fa-sharp fa-regular fa-envelope"></i> hocet2002@gmail<br>.com</li>
+                            </ul>
+                        </div>
+        
+                        <div class="col-12 col-lg-3 cont pt-3 text-center">
+                            <h6>Contacts</h6>
+                            <ul>
+                                <li><i class="fa-solid fa-location-dot"></i><b>Bonyokwa, Kimara\ </b>Dar Es Salaam, Tanzania.</li>
+                                <li><i class="fa-solid fa-phone"></i> +255 784 396 560/<br>+255 673 292 994</li>
+                                <li><i class="fa-sharp fa-regular fa-envelope"></i> hocet2002@gmail<br>.com </li>
+           
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-buttom">
+                <p class="text-center pt-2 pb-2">All Right Reserved &copy HOCET 2023 - Designing By SHM Web Developer</p>
+            </div>
+        </footer>
+
+<script src="bootstrap-5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
